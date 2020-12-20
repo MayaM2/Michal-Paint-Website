@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<title>מיכל מן - תמונות שמן</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="SHORTCUT ICON" href="brush.svg"/>
+<style>
+  @font-face {
+      font-family: yakov;
+      src: url('Yakov.TTF');
+  }
+
+  @font-face {
+      font-family: mplusr;
+      src: url('MPLUSRounded1c-Thin.ttf');
+  }
+
+  @font-face {
+      font-family: medium;
+      src: url('MPLUSRounded1c-Medium.ttf');
+  }
+
+  body, h1,h2,h3,h4,h5,h6 {font-family: "medium"}
+  h2 { font-size: 3vw; }
+  p { font-size: 2vw; }
+  .w3-row-padding img {margin-bottom: 12px}
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {width: 120px;background: #222;}
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {margin-right: 120px}
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {#main {margin-right: 0}}
+
+/* to make text appear in an upper position than it would*/
+  #overlay {
+      position: relative;
+      bottom: 107px;
+      letter-spacing: 8px;
+  }
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<!--  <a class="w3-bar-item w3-padding-large w3-black">
+    <i class=" w3-xxlarge"></i>
+    <p></p>
+  </a> -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p style="font-size:1.5vw"><font face = "mplusr" style="font-size:1.5vw">
+      בית
+    </font></p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p><font face = "mplusr" style="font-size:1.5vw">
+      אודות
+    </font></p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p><font face = "mplusr" style="font-size:1.5vw">
+      פורטפוליו
+    </font></p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p><font face = "mplusr" style="font-size:1.5vw">
+      צרו קשר
+    </font></p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">צור קשר</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">פורטפוליו</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">אודות</a>
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">בית</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1>
+      <font face = "yakov" style="font-size:17vw">
+        מיכל מן
+      </font>
+    </h1>
+    <p id='overlay'>
+      <font face = "mplusr" style="font-size:5vw">
+        תמונות שמן
+      </font>
+    </p>
+    <!-- <img src="background3.jpg" alt="background picture" class="w3-image" width="992" height="1108"> -->
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-padding-48 w3-justify w3-text-grey" id="about">
+    <h2 class="w3-text-light-grey">אודות</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      מיכל מן הינה אמנית ישראלית. למדה במכון אבני במשך כך וכך שנים היא הלכה והלכה ולמדה בכל מיני מקומות. מאז היא מתמקדת בציורי שמן ושואבת השראה מהטבע וחוף הים. הפסטורליות בציורים שלה מתאפיינת בפלטה מאוד מיוחדת.
+    </p>
+    <p>
+      ועשתה כך עוד ועוד טקסט שיהיה פה ושכך יוכלו ללמוד עוד עלייך.
+    </p>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-48 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">פורטפוליו</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="background1.jpg" style="width:100%">
+        <img src="background2.jpg" style="width:100%">
+        <img src="background3.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="background1.jpg" style="width:100%">
+        <img src="background2.jpg" style="width:100%">
+        <img src="background3.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-48 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">צרו קשר</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>הרצליה, ישראל</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>manmichal_paint@gmail.com</p>
+    </div><br>
+    <p>ליצירת קשר, אנא מלאו את הטופס הבא:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="שם" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="דואל" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="נושא" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="תוכן ההודעה" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i>
+          שלח/י הודעה
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">כל הזכויות שמורות למיכל מן</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
