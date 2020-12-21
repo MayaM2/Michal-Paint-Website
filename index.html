@@ -40,7 +40,7 @@
   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
   @media screen and (max-width: 600px) {
     body {
-      font-size: 25px;
+      font-size: 18px;
     }
   }
 
@@ -205,10 +205,15 @@
     <h2 class="w3-text-light-grey">צרו קשר</h2>
     <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
-      <p><img src="placeholder.svg" class = "my-icon w3-margin-left"/>הרצליה, ישראל</p>
-      <p><img src="paper-plane.svg" class = "my-icon w3-margin-left"/>manmichal_paint@gmail.com</p>
-    </div><br>
+    <div class="w3-section w3-hide-small">
+      <p><img src="placeholder.svg" class = "my-icon w3-margin-left" style="width:3vw"/>הרצליה, ישראל</p>
+      <p><img src="paper-plane.svg" class = "my-icon w3-margin-left" style="width:3vw"/>manmichal_paint@gmail.com</p>
+    </div>
+    <div class="w3-section w3-hide-medium w3-hide-large">
+      <p><img src="placeholder.svg" class = "my-icon w3-margin-left" style="width:20px"/>הרצליה, ישראל</p>
+      <p><img src="paper-plane.svg" class = "my-icon w3-margin-left" style="width:20px"/>manmichal_paint@gmail.com</p>
+    </div>
+    <br>
     <p>ליצירת קשר, אנא מלאו את הטופס הבא:</p>
 
     <form action="/action_page.php" target="_blank">
@@ -218,7 +223,8 @@
       <p><input class="w3-input w3-padding-16" type="text" placeholder="תוכן ההודעה" required name="Message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i><img src="paper-plane-black.svg" class = "my-icon w3-margin-left"/></i>
+          <i><img src="paper-plane-black.svg" class = "my-icon w3-margin-left w3-hide-small"/>
+            <img src="paper-plane-black.svg" class = "my-icon w3-margin-left w3-hide-medium w3-hide-large" style="width:20px"/></i>
           שלח/י הודעה
         </button>
       </p>
@@ -229,17 +235,15 @@
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <p class="w3-medium">&copy; כל הזכויות שמורות למיכל מן</p>
+    <p class="w3-medium">Icons made by
+    <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" target="_blank">Smashicons</a>
+    from
+    <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
   <!-- End footer -->
   </footer>
 
 <!-- END PAGE CONTENT -->
 </div>
-<!-- <div>
-Icons made by
-<a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
-from
-<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-</div> -->
 
 
 </body>
