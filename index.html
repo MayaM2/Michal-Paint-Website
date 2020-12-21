@@ -28,22 +28,21 @@
   body, h1,h3,h4,h5,h6 {font-family: "medium"}
   h2 {font-family: "mplusr"}
 
-@media screen and (min-width: 601px) {
-  h2 {
-    font-size: 3vw;
+  @media screen and (min-width: 601px) {
+    h2 {
+      font-size: 3vw;
+    }
+    p {
+      font-size: 2vw;
+    }
   }
-  p {
-    font-size: 2vw;
-  }
-}
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 25px;
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 25px;
+    }
   }
-}
-
 
   /* h2 { font-size: 3vmax; }
   p { font-size: 2vmax; } */
@@ -78,6 +77,27 @@
       font-size: 30px;
     }
   }
+
+  /* Custom scroll bar*/
+  /* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DCDCDC;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DCDCDC;
+}
 
 </style>
 <body class="w3-black">
@@ -187,13 +207,13 @@
 
     <div class="w3-section">
       <p><img src="placeholder.svg" class = "my-icon w3-margin-left"/>הרצליה, ישראל</p>
-      <p><img src="paper-plane.svg" class = "my-icon w3-margin-left"/></i>manmichal_paint@gmail.com</p>
+      <p><img src="paper-plane.svg" class = "my-icon w3-margin-left"/>manmichal_paint@gmail.com</p>
     </div><br>
     <p>ליצירת קשר, אנא מלאו את הטופס הבא:</p>
 
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="שם" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="דואל" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="כתובת דוא&quot;ל" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="נושא" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="תוכן ההודעה" required name="Message"></p>
       <p>
